@@ -69,7 +69,6 @@ public class AlterarListarLivroServiceTest {
         verify(alterarLivroValidator).validarCampos(request);
         verify(livroRepository).save(livroCaptor.capture());
         verify(alterarLivroMapper).toResponse(livro);
-//        verify(livroValidator).validarDisponibilidadeDoLivro(livro);
 
         assertEquals("Titulo Editado", livroCaptor.getValue().getTitulo());
         assertEquals("Descrição Editada", livroCaptor.getValue().getDescricao());

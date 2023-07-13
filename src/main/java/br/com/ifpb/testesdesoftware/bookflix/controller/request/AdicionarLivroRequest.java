@@ -20,7 +20,7 @@ public class AdicionarLivroRequest {
     @Size(min = 2, max = 20, message = "Título precisa ter tamanho maior que dois caracteres e menor que 20")
     private String titulo;
 
-    @NotBlank(message = "Título não pode ser vazio")
+    @NotNull(message = "Título não pode ser vazio")
     @Size(min = 2, max = 20, message = "Título precisa ter tamanho maior que dois caracteres e menor que 20")
     private Long ISBN;
 
